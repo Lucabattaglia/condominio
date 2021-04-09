@@ -6,7 +6,7 @@ public class Verbale_finale {
 	private String titolo;
 	private String testo;
 	private Preventivo preventivo;
-	private int si_totali;
+
 	public int getId() {
 		return id;
 	}
@@ -37,12 +37,27 @@ public class Verbale_finale {
 	public void setPreventivo(Preventivo preventivo) {
 		this.preventivo = preventivo;
 	}
-	public int getSi_totali() {
-		return si_totali;
+	public Verbale_finale(Riunione riunione, String titolo, String testo, Preventivo preventivo) {
+		this.riunione = riunione;
+		this.titolo = titolo;
+		this.testo = testo;
+		this.preventivo = preventivo;
 	}
-	public void setSi_totali(int si_totali) {
-		this.si_totali = si_totali;
+	public Verbale_finale() {
 	}
+	public Verbale_finale(int id, Riunione riunione, String titolo, String testo, Preventivo preventivo) {
+		this.id = id;
+		this.riunione = riunione;
+		this.titolo = titolo;
+		this.testo = testo;
+		this.preventivo = preventivo;
+	}
+	@Override
+	public String toString() {
+		return "Verbale_finale [id=" + id + ", riunione=" + riunione + ", titolo=" + titolo + ", testo=" + testo
+				+ ", preventivo=" + preventivo + "]";
+	}
+	
 	
 	
 	

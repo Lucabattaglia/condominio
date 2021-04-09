@@ -17,5 +17,16 @@ public class Palazzina {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
+	public Palazzina(int id, String nome) {
+		this.id = id;
+		this.nome = nome;
+	}
+    public Palazzina() {
+    	
+    }
+	@Override
+	public String toString() {
+		return "Palazzina [id=" + id + ", nome=" + nome + "]";
+	}
+    
 }

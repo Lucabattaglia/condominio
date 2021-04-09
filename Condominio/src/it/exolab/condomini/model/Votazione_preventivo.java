@@ -5,7 +5,7 @@ public class Votazione_preventivo {
 	private int id;
 	private Preventivo preventivo;
 	private Rappresentante rappresentante;
-	private int presenze_totali;
+	private Riunione riunione;
 	private String votazione;
 	
 	public int getId() {
@@ -26,11 +26,12 @@ public class Votazione_preventivo {
 	public void setRappresentante(Rappresentante rappresentante) {
 		this.rappresentante = rappresentante;
 	}
-	public int getPresenze_totali() {
-		return presenze_totali;
+	
+	public Riunione getRiunione() {
+		return riunione;
 	}
-	public void setPresenze_totali(int presenze_totali) {
-		this.presenze_totali = presenze_totali;
+	public void setRiunione(Riunione riunione) {
+		this.riunione = riunione;
 	}
 	public String getVotazione() {
 		return votazione;
@@ -39,36 +40,29 @@ public class Votazione_preventivo {
 		this.votazione = votazione;
 	}
 	
-	public Votazione_preventivo(int id, Preventivo preventivo, Rappresentante rappresentante, int presenze_totali,
+	public Votazione_preventivo(Preventivo preventivo, Rappresentante rappresentante, Riunione riunione,
 			String votazione) {
-
+		this.preventivo = preventivo;
+		this.rappresentante = rappresentante;
+		this.riunione = riunione;
+		this.votazione = votazione;
+	}
+	
+	public Votazione_preventivo(int id, Preventivo preventivo, Rappresentante rappresentante, Riunione riunione,
+			String votazione) {
 		this.id = id;
 		this.preventivo = preventivo;
 		this.rappresentante = rappresentante;
-		this.presenze_totali = presenze_totali;
+		this.riunione = riunione;
 		this.votazione = votazione;
 	}
-	
-	public Votazione_preventivo(Preventivo preventivo, Rappresentante rappresentante, int presenze_totali,
-			String votazione) {
-
-		this.preventivo = preventivo;
-		this.rappresentante = rappresentante;
-		this.presenze_totali = presenze_totali;
-		this.votazione = votazione;
-	}
-	
 	public Votazione_preventivo() {
 
 	}
-	
 	@Override
 	public String toString() {
 		return "Votazione_preventivo [id=" + id + ", preventivo=" + preventivo + ", rappresentante=" + rappresentante
-				+ ", presenze_totali=" + presenze_totali + ", votazione=" + votazione + "]";
+				+ ", riunione=" + riunione + ", votazione=" + votazione + "]";
 	}
-	
-	
-
 }
 
