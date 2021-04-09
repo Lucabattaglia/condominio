@@ -7,6 +7,7 @@ public class Delegato {
 	private String cognome;
 	private String codice_fiscale;
 	private String numero_appartamento;
+	private Palazzina palazzina;
 	
 	public int getId() {
 		return id;
@@ -38,31 +39,41 @@ public class Delegato {
 	public void setNumero_appartamento(String numero_appartamento) {
 		this.numero_appartamento = numero_appartamento;
 	}
+	public Palazzina getPalazzina() {
+		return palazzina;
+	}
+	public void setPalazzina(Palazzina palazzina) {
+		this.palazzina = palazzina;
+	}
 	
-	public Delegato(int id, String nome, String cognome, String codice_fiscale, String numero_appartamento) {
+	public Delegato(int id, String nome, String cognome, String codice_fiscale, String numero_appartamento,
+			Palazzina palazzina) {
 		this.id = id;
 		this.nome = nome;
 		this.cognome = cognome;
 		this.codice_fiscale = codice_fiscale;
 		this.numero_appartamento = numero_appartamento;
+		this.palazzina = palazzina;
 	}
 	
-	public Delegato(String nome, String cognome, String codice_fiscale, String numero_appartamento) {
+	public Delegato(String nome, String cognome, String codice_fiscale, String numero_appartamento,
+			Palazzina palazzina) {
 		this.nome = nome;
 		this.cognome = cognome;
 		this.codice_fiscale = codice_fiscale;
 		this.numero_appartamento = numero_appartamento;
+		this.palazzina = palazzina;
 	}
-	
 	public Delegato() {
-		
+
 	}
 	
 	@Override
 	public String toString() {
 		return "Delegato [id=" + id + ", nome=" + nome + ", cognome=" + cognome + ", codice_fiscale=" + codice_fiscale
-				+ ", numero_appartamento=" + numero_appartamento + "]";
+				+ ", numero_appartamento=" + numero_appartamento + ", palazzina=" + palazzina + "]";
 	}
+	
 	
 	
 
