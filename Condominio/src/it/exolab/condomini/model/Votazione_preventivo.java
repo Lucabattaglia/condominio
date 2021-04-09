@@ -65,4 +65,18 @@ public class Votazione_preventivo {
 				+ ", riunione=" + riunione + ", votazione=" + votazione + "]";
 	}
 }
-
+//<insert id="insert"
+//parameterType="it.exolab.condomini.model.Rappresentante" useGeneratedKeys="true"
+//keyProperty="id" keyColumn="id">
+//insert into rappresentante(nome, cognome,email,password, numero_appartamento,
+//codice_fiscale, ruolo, id_palazzina) values (#{nome}
+//, #{cognome}
+//, #{email}
+//, #{password}
+//, #{numero_appartamento}
+//, #{codice_fiscale}
+//, "rappresentante"
+//, #{id_palazzina}
+//)
+//
+//</insert>
