@@ -13,7 +13,10 @@
 		, #{cognome}
 		, #{email}
 		, #{password}
+		, #{numero_appartamento}
+		, #{codice_fiscale}
 		, "rappresentante"
+		, #{id_palazzina}
 		)
 
 	</insert>

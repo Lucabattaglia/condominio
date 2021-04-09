@@ -21,6 +21,7 @@
 	
    <mappers>
       <mapper resource = "rappresentante.xml"/>
+      <mapper resource = "delegato.xml"/>
    </mappers>
    
    
