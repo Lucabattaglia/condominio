@@ -10,7 +10,7 @@ public class Rappresentante {
 	private String password;
 	private String numero_appartamento;
 	private String ruolo;
-	private Palazzina palazzina;
+	private int id_palazzina;
 	
 	public int getId() {
 		return id;
@@ -60,15 +60,15 @@ public class Rappresentante {
 	public void setRuolo(String ruolo) {
 		this.ruolo = ruolo;
 	}
-	public Palazzina getPalazzina() {
-		return palazzina;
+	public int getPalazzina() {
+		return id_palazzina;
 	}
-	public void setPalazzina(Palazzina palazzina) {
-		this.palazzina = palazzina;
+	public void setPalazzina(int id_palazzina) {
+		this.id_palazzina = id_palazzina;
 	}
 	
 	public Rappresentante(int id, String nome, String cognome, String codice_fiscale, String email, String password,
-			String numero_appartamento, String ruolo, Palazzina palazzina) {
+			String numero_appartamento, String ruolo, int id_palazzina) {
 		this.id = id;
 		this.nome = nome;
 		this.cognome = cognome;
@@ -77,11 +77,11 @@ public class Rappresentante {
 		this.password = password;
 		this.numero_appartamento = numero_appartamento;
 		this.ruolo = ruolo;
-		this.palazzina = palazzina;
+		this.id_palazzina = id_palazzina;
 	}
 	
 	public Rappresentante(String nome, String cognome, String codice_fiscale, String email, String password,
-			String numero_appartamento, String ruolo, Palazzina palazzina) {
+			String numero_appartamento, String ruolo, int id_palazzina) {
 		this.nome = nome;
 		this.cognome = cognome;
 		this.codice_fiscale = codice_fiscale;
@@ -89,7 +89,7 @@ public class Rappresentante {
 		this.password = password;
 		this.numero_appartamento = numero_appartamento;
 		this.ruolo = ruolo;
-		this.palazzina = palazzina;
+		this.id_palazzina = id_palazzina;
 	}
 	
 	public Rappresentante() {
@@ -100,7 +100,7 @@ public class Rappresentante {
 	public String toString() {
 		return "Rappresentante [id=" + id + ", nome=" + nome + ", cognome=" + cognome + ", codice_fiscale="
 				+ codice_fiscale + ", email=" + email + ", password=" + password + ", numero_appartamento="
-				+ numero_appartamento + ", ruolo=" + ruolo + ", palazzina=" + palazzina + "]";
+				+ numero_appartamento + ", ruolo=" + ruolo + ", id_palazzina=" + id_palazzina + "]";
 	}
 	
 	
